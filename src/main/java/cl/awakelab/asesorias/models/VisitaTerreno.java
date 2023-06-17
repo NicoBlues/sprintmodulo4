@@ -2,7 +2,13 @@ package main.java.cl.awakelab.asesorias.models;
 
 import java.sql.Date;
 import java.sql.Time;
-
+/**
+ * 
+ * @author Aldo Pino, Sebastian Hernandez, Freddy Yevenes, Nestor Leyton
+ * @version 1.0.0
+ *
+ *clase visita en terreno con sus parametros 
+ */
 public class VisitaTerreno {
 
 	private int identificador;
@@ -12,10 +18,12 @@ public class VisitaTerreno {
 	private String lugar;
 	private String comentarios;
 
+	// cosntructor vacio
 	public VisitaTerreno() {
 		super();
 	}
 
+	//constructor con parametros aptos para nuevos datos
 	public VisitaTerreno(int identificador, String rut, Date fecha, Time hora, String lugar, String comentarios) {
 		super();
 		this.identificador = identificador;
@@ -26,6 +34,7 @@ public class VisitaTerreno {
 		this.comentarios = comentarios;
 	}
 
+	//getters and setters
 	public int getIdentificador() {
 		return identificador;
 	}
@@ -74,6 +83,7 @@ public class VisitaTerreno {
 		this.comentarios = comentarios;
 	}
 
+	//metodo utilizado para desplegar los datos por pantalla 
 	@Override
 	public String toString() {
 		return "VisitaTerreno [identificador=" + identificador + ", rut=" + rut + ", fecha=" + fecha + ", hora=" + hora

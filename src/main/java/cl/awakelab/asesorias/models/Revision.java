@@ -1,5 +1,12 @@
 package main.java.cl.awakelab.asesorias.models;
-
+/**
+ * 
+ * @author Aldo Pino, Sebastian Hernandez, Freddy Yevenes, Nestor Leyton
+ * @version 1.0.0
+ *
+ * clase revision y sus parametros 
+ *
+ */
 public class Revision {
 
 	private int identificadorRevision;
@@ -8,10 +15,12 @@ public class Revision {
 	private String detalleParaRevisar;
 	private int estado;
 
+	//constructor vacio 
 	public Revision() {
 
 	}
 
+	//constructor con parametros aptos para nuevos datos
 	public Revision(int identificadorRevision, int identificadorVisitaTerreno, String nombreRevision,
 			String detalleParaRevisar, int estado) {
 
@@ -22,6 +31,7 @@ public class Revision {
 		this.estado = estado;
 	}
 
+	//getters and setters
 	public int getIdentificadorRevision() {
 		return identificadorRevision;
 	}
@@ -62,6 +72,7 @@ public class Revision {
 		this.estado = estado;
 	}
 
+	//metodo utilizado para desplegar los datos por pantalla 
 	@Override
 	public String toString() {
 		return "Revision [identificadorRevision=" + identificadorRevision + ", identificadorVisitaTerreno="
